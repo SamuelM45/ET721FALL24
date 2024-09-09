@@ -36,3 +36,40 @@ else:
 
 print(f"Your final grade for the class is: {finalgrade} = {gpa}")
 
+print("------- Example 2: Loops - Guess the Number -------")
+SECRET = 8
+userguess = int(input("Guess a number between 1 and 10: "))
+
+while not (SECRET == userguess):
+    userguess = int(input("WRONG! Guess again: "))
+
+print(f"Congrats! {userguess} is the right number!")
+
+
+print("------- Example 3: Loops - Break Statement -------")
+balance = 1000
+withdraw = 0
+deposit = 0
+
+while True:
+    userinput = input("Do you want to withdraw (w) or deposit (d)? ")
+    if userinput == 'w' or userinput == 'W':
+        w_amount = int(input('How much do you want to withdraw? '))
+        if w_amount > balance:
+            print(f"Insufficient funds! You can't withdraw more than {balance}")
+        else:
+            balance -= w_amount
+            print(f"Your new balance is {balance}")
+    elif userinput == 'd' or userinput == 'D':
+        d_amount = int(input('How much do you want to deposit? '))
+        balance += d_amount
+        print(f"Your new balance is {balance}")
+    else:
+        print("Invalid selection!")
+
+    choice = input("Would you like to do another transaction? (Y/N) ")
+    if not (choice == 'y' or choice == 'Y'):
+        break
+
+print("Thank you for banking with us!")
+
