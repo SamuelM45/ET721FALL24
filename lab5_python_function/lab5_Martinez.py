@@ -6,37 +6,29 @@ Sep 16, Python functions
 import math
 import random
 
-# -----------------------------------
 # Example 1: Print a message
-# -----------------------------------
 # This is a function that doesn't return or pass a value
 def hellofunction():
     print("Welcome to function!")
 
-# -----------------------------------
+
 # Example 2: Pass a username as argument
-# -----------------------------------
 # This function takes a username but doesn't return any value
 def greeting(username):
     print(f"Good afternoon {username}")
 
-# -----------------------------------
 # Example 3: Function with default parameter
-# -----------------------------------
 # This function has a default parameter, but it doesn't return any value
 def usercountry(countryname=""):
     print(f"I am from {countryname}")
 
-# -----------------------------------
+
 # Example 4: Pass and return value
-# -----------------------------------
 # This function returns triple the value of a given number
 def triplenumber(num=0):
     return 3*num
 
-# -----------------------------------
 # Example 5: Check divisibility
-# -----------------------------------
 # This function checks if two numbers are divisible by each other.
 # Returns True if divisible, otherwise False
 def isdivisible(n1, n2):
@@ -45,23 +37,23 @@ def isdivisible(n1, n2):
     else:
         return False
 
-# -----------------------------------
+
 # Example 6: Calculate circumference
-# -----------------------------------
 # This function returns the circumference given the radius of a circle
 def circumference(radius):
     return 2 * math.pi * radius
 
-# -----------------------------------
+
 # Example 8: Roll a dice
-# -----------------------------------
 # This function returns a random number between 1 and 6
 def rolldice():
     return random.randint(1, 6)
 
-# -----------------------------------
+
+
+
 # Function calls
-# -----------------------------------
+
 
 # Example 1: Call a function that doesn't return or pass a value
 print("\n ---- Example 1 ----- ")
